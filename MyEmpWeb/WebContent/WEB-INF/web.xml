@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MyEmpWeb</display-name>
+
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.linjie.controller.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>emp</servlet-name>
+		<servlet-class>com.linjie.controller.EmpManageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>emp</servlet-name>
+		<url-pattern>/emp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>modify</servlet-name>
+		<servlet-class>com.linjie.controller.EmpModifyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>modify</servlet-name>
+		<url-pattern>/emp/modify</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>delet</servlet-name>
+		<servlet-class>com.linjie.controller.EmpDeletServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delet</servlet-name>
+		<url-pattern>/emp/delet</url-pattern>
+	</servlet-mapping>
+</web-app>
